@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Bootstraps</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+  </style>
+  <link rel="stylesheet" href="band.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+        <!--NAVBAR CODE BEGINS-->
+      <nav class="navbar navbar-expand-lg" id="nav">
+       <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+           <ul class="navbar-nav">
+             <li class="nav-item">
+               <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link text-light" href="about.html">About me</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link text-light" href="contact.html">Contact</a>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle text-light" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Projects
+               </a>
+               <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                 <li><a class="dropdown-item" href="converter.html">Metric/Imperial unit converter.</a></li>
+               </ul>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+     <!--NAVBAR CODE ENDS-->
+  <!--CODE FOR NAVBAR BEGINS-->
+  <nav>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active text-light" aria-current="page" href="#about-us">The Bootstraps.</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#merch">Band merchandise.</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#tour">Upcoming tour dates.</a>
+      </li>
+    </ul>
+  </nav>
+  <!--CODE FOR CAROUSEL BEGINS-->
+  <div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light">Lead singer Julian during the opening song "Frontend toolkit"</h5>
+            <p class="text-light">Taken at the Berlin concert, Olympiastadion 2021.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="https://images.pexels.com/photos/1916821/pexels-photo-1916821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light">Paulo showing off lead guitar during "Z-index"</h5>
+            <p class="text-light">Taken at the Lisbon concert, Estádio José Alvalade 2020.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/354304/pexels-photo-354304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-light">Ruben during the drum solo of "Ordered List"</h5>
+            <p class="text-light">Taken at the Prague concert, Generali Arena 2021.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!--BAND STORY CODE BEGINS-->
+  <h1 id="about-us" class="our-story col-sm-4 offset-md-4 text-light">The Bootstraps Story</h1>
+
+  <p class="our-story2 col-sm-8 offset-md-2 text-light">The Bootstraps formed in 2011 after producers Marc Otto & Jacob Thornton had the idea to form a <strong>super group. </strong> Hailing from Manchester, England the three members, Julian, Ruben & Paulo are all avid Manchester United fans.Lead singer Julian wrote the bands first hit <em>"Front-end toolkit" </em> in late 2011. The group went on to complete a world-tour in 2012, writing another hit single <em> "Breadcrumb" </em> the same year. The Bootstraps sound is so unique, and unlike anything else, it is like they went back in time and picked the best music from history and re-wrote it as their own. This theory became viral on social media and was even featured in an episode the hit TV show <a href="#video">Dr Who</a>.</p>
+  <p class="our-story2 col-sm-6 offset-md-3">Since their inception The Bootstraps have had global success including:
+  <ul class="our-story2 col-sm-6 offset-md-3">
+    <li>11 Grammys</li>
+    <li>21 MTV Video Music Awards</li>
+    <li>4 NME Awards</li>
+    <li>6 Platinum Albums</li>
+    <li>14 Number One hits</li>
+  </ul>
+  <!--EMBEDDED VIDEO CODE BEGINS-->
+  <div class="row gx-5" style="margin-top: 5.5rem;">
+    <iframe id="video" class="offset-md-2" style="height: 30rem; width: 40rem;" src="https://www.youtube.com/embed/ZjKWQrLObA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--BAND MERCH CARD-->
+    <div id="merch" class="card offset-md-1 bg-light text-dark" style="width: 20rem;">
+      <img src="https://ih1.redbubble.net/image.2230031453.8955/ssrco,slim_fit_t_shirt,womens,fafafa:ca443f4786,front,square_product,600x600.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title fw-bold">The Bootstraps Merch Store</h5>
+        <p class="card-text text-dark">To show your support for your favourite band why not head to The Bootstraps merch store. All apparel is sustainably produced and 20% from all proceeds goes to charity. Do good and feel great!</p>
+        <a href="https://technologyshirts.com/products/bootstrap" target="_blank" class="btn btn-primary bg-success">Get your gear</a>
+      </div>
+    </div>
+  </div>
+
+  <!--TOUR DATES CODE BEGINS-->
+  <aside>
+    <ul class="tour fw-bold">
+      <li>Eden Park, Auckland, 25th June 2022 | </li>
+      <li>Accor Stadium, New South Wales, 29th June 2022 | </li>
+      <li>Ajinomoto Stadium, Tokyo, 1th July 2022 | </li>
+      <li>National Stadium, Kallang, 4th July 2022 | </li>
+      <li>Cape Town Stadium, Cape Town, 8th July 2022 | </li>
+      <li>Panathenaic Stadium, Athens, 12th July 2022 | </li>
+      <li>St. Jakob-Park, Basel, 15th July 2022 | </li>
+      <li id="tour">Old Trafford, 20th July 2022</li>
+    </ul>
+  </aside>
+
+  <!--CODE FOR FOOTER BEGINS-->
+  <footer class="text-center my-3 text-white-50">
+    <p class="mb-0">&copy; Copyright 2022 - The Bootstraps powered by <a href="https://getbootstrap.com/" target="_blank" class="text-white">Bootstrap</a>.</p>
+  </footer>
+
+  <!--BOOTSTRAP ACCESS CODE-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>

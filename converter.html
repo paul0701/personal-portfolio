@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="converter.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+      </style>
+  </head>
+  <body>
+     <container id="container1">
+       <!--NAVBAR CODE BEGINS-->
+     <nav class="navbar navbar-expand-lg" id="nav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse align-items-start" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item text-light" href="band.html">Band tribute page</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--NAVBAR CODE ENDS-->
+      <h1>Metric/Imperial unit converter</h1>
+<div class="div">
+   <input id="intial-value" class="intial-value" type="number" placeholder="Enter" oninput="converter(this.value)"></input>
+  </div>
+</container>
+<container id="container2">
+  <div class="div">
+    <h2>Length (Metre/Feet)</h2>
+   <p id="conversion-value-feet" class="conversion-value-feet">0 meters = 0.00 feet</p>
+    <h2>Volume (Litres/Gallons)</h2>
+    <p id="conversion-value-gallons" class="conversion-value-gallons">0 litres = 0.00 gallons</p>
+    <h2>Volume (Kilograms/Pounds)</h2>
+    <p id="conversion-value-pounds" class="conversion-value-pounds">0 kilograms = 0.00 pounds</p>
+</div>
+</container>
+
+
+
+
+
+ <!--BOOTSTRAP JS IMPORT-->
+ <script>let conversionValueFeet = document.getElementById("conversion-value-feet")
+
+  //This changes the <p> with id="conversion-value" to a variable JS can understand "conversionValue" (in camelCase)
+  let conversionValueGallons = document.getElementById("conversion-value-gallons")
+  let conversionValuePounds = document.getElementById("conversion-value-pounds")
+  
+  //End of variable assignment code
+  
+  function converter(iv) 
+  
+  //Here we invoke the converter(this.value) function from the input tag
+  
+  {
+  let feetNum=(iv*3.28).toFixed(2)
+  conversionValueFeet.textContent=iv + " metre/s = " + feetNum + " foot | " + feetNum + " foot = " + iv + " metre/s"
+    
+  //The above code allows JS to concatenate the output for the data
+  
+  let gallonsNum=(iv*.22).toFixed(2)
+  conversionValueGallons.textContent=iv + " litre/s = " + gallonsNum + " gallons | " + gallonsNum + " gallons = " + iv + " litres/s"
+    
+  let poundsNum=(iv*2.2).toFixed(2)
+  conversionValuePounds.textContent=iv + " kilogram/s = " + poundsNum + " pounds | " + poundsNum + " pounds = " + iv + " kilogram/s"
+    
+    
+  
+  //Then we output the iv*" " in the converted "conversion-value" <p> tag
+   
+  }
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>  
+  </body>
+</html>
