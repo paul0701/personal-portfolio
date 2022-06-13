@@ -11,21 +11,17 @@
     width:100vw;
     height:100vh;
     margin: auto;
-    overflow:hidden !important;
-    font-family: 'Source Sans 3', sans-serif !important;
     background: linear-gradient(rgba(1,1,1,.7), rgba(1, 1, 1, 0.6)), url("https://images.pexels.com/photos/1437493/pexels-photo-1437493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-position:center;
     background-size:cover;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--white);
-    position:relative;
     }
-    
+    navbar {
+        position: top;
+    }
+
     .content{
     width:70%;
-    text-align:center;
+
     }
     
     .content .logo{
@@ -52,15 +48,6 @@
     bottom:2vh;
     }
     
-    .content .social_icons:before{
-    content:"";
-    width:1px;
-    height:100%;
-    background-color:var(--white);
-    position:absolute;
-    top:-100%;
-    }
-    
     .content .social_icons a{
     margin:10px 0px;
     color:var(--white);
@@ -68,10 +55,6 @@
     text-decoration:none;
     font-size:1.5em;
     transition:0.5s;
-    }
-    
-    .content .social_icons a:hover{
-    color:var(--primary);
     }
     
     
@@ -106,9 +89,9 @@
     }
     
     .searchBox:hover > .searchButton:hover {
-    background-color:var(--primary);
-    border:1px solid var(--primary);
-    color:var(--white);
+    background-color: #ffffff;
+    border: 2px solid var(--primary);
+    color: #000000;
     }
     
     .searchButton {
@@ -139,6 +122,9 @@
     font-size: 16px;
     transition: 0.4s;
     width: 0px;
+    }
+    li {
+        font-size: 18px;
     }
     
     @media screen and (max-width: 1020px) {
@@ -178,13 +164,6 @@
     
     .content .social_icons a{
     margin:0 15px;
-    }
-    
-    .content .social_icons:before{
-    content:"";
-    width:0px;
-    height:0%;
-    top:00%;
     }
     
     .searchBox:hover > .searchInput {
