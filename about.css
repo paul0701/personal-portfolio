@@ -1,0 +1,45 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+    }
+.page {
+    background: rgb(247, 251, 251);
+    background: linear-gradient(135deg, rgb(247, 251, 251) 50%, rgb(60, 183, 111) 50%);
+    height: 100vh; 
+}
+li {
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    position: relative;
+    color: #37789d;
+  }
+  a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid rgb(60, 183, 111);
+    transition: 0.4s;
+  }
+  a:hover:after {
+    width: 100%;
+  }
+
+.content .social_icons{
+    position:fixed;
+    right:2vw;
+    bottom:2vh;
+    }
+    
+    .content .social_icons a{
+    margin:10px 0px;
+    color: rgb(247, 251, 251);
+    display:block;
+    text-decoration:none;
+    font-size: 28px;
+    transition:0.5s;
+    }
+    

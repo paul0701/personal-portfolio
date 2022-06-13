@@ -1,33 +1,68 @@
 * {
     font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
 }
-
 .page {
-    background: rgb(244,242,19);
-    background: linear-gradient(90deg, rgba(244,242,19,1) 25%, rgba(244,242,19,1) 65%, rgba(85,61,236,1) 75%);
-    height: 100vh;
-   }
+background: rgb(247, 251, 251);
+background: linear-gradient(135deg, rgb(247, 251, 251) 50%, rgba(97,54,238,1) 50%);
+height: 100vh; 
+}
 img {
     border-radius: 200px;
-    border: 12px #ffffff;
+    border: 10px #ffffff;
     border-style: dashed;
     transform: rotate(-45deg);
     width: 400px;
 }
 div > h1 {
     font-size: 60px;
-    margin-top: 160px;
-    margin-bottom: -60px;
+    margin-top: 80px;
 }
 
 .knife:hover {
     display: inline-block;
     cursor: pointer;
     transform: rotate(1795deg);
-    transition: all 2s ease-in-out 0s;
+    transition: all 3s ease-in-out 0s;
 }
 .knife {
     display: inline-block;
     transform: rotate(-1795deg);
-    transition: all 2s ease-in-out 0s;
+    transition: all 3s ease-in-out 0s;
 }
+li {
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    position: relative;
+    color: #37789d;
+  }
+  a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid rgba(97,54,238,1);
+    transition: 0.4s;
+  }
+  a:hover:after {
+    width: 100%;
+  }
+   
+  .content .social_icons{
+    position:fixed;
+    right:2vw;
+    bottom:2vh;
+    }
+    
+    .content .social_icons a{
+    margin:10px 0px;
+    color: rgb(247, 251, 251);
+    display:block;
+    text-decoration:none;
+    font-size: 28px;
+    transition:0.5s;
+    }
+    
