@@ -42,4 +42,23 @@ a {
     font-size: 28px;
     transition:0.5s;
     }
+    .tools {
+      margin-top: 100px;
+      height: 500px;
+      width: 600px;
+      border: dashed rgb(60, 183, 111) 5px;
+      border-radius: 80px 30px;
+    }
+
+    .tools > p {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .tools > img {
+      width: 50px;
+      margin-top: 50px;
+      margin-left: 50px;
+    }
     

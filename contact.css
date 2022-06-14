@@ -65,4 +65,16 @@ a {
     font-size: 28px;
     transition:0.5s;
     }
+
+    .form {
+        margin-top: 500px;
+
+    }
+
+    input {
+        border: none;
+        border-radius: 10px;
+    }
+
+    
     

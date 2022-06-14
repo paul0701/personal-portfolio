@@ -11,9 +11,9 @@
     width:100vw;
     height:100vh;
     margin: auto;
-    background: linear-gradient(rgba(1,1,1,.7), rgba(1, 1, 1, 0.6)), url("https://images.pexels.com/photos/1437493/pexels-photo-1437493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-position:center;
-    background-size:cover;
+    background: rgb(247, 251, 251);
+    background: linear-gradient(135deg, rgb(247, 251, 251) 50%, rgb(236, 94, 66) 50%);
+    height: 100vh; 
     }
     navbar {
         position: top;
@@ -56,76 +56,26 @@
     font-size:1.5em;
     transition:0.5s;
     }
-    
-    
-    .content .button{
-    position:relative;
-    top:-10px;
-    }
-    
-    .searchBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:  translate(-50%,50%);
-    border-radius: 40px;
-    padding: 5px 10px;
-    display:flex;
-    
-    }
-    
-    .searchBox:hover > .searchInput {
-    width: 240px;
-    padding:10px;
-    }
-    
-    .searchBox:hover > .searchButton {
-    background: white;
-    color : #2f3640;
-    }
-    
-    .searchBox:hover{
-    background: #2f3640;
-    }
-    
-    .searchBox:hover > .searchButton:hover {
-    background-color: #ffffff;
-    border: 2px solid var(--primary);
-    color: #000000;
-    }
-    
-    .searchButton {
-    color: white;
-    float: right;
-    width: auto;
-    padding:10px 20px;
-    border-radius:40px;
-    background:transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    border:0;
-    font-style:normal !Important;
-    font-weight:600;
-    text-align:center;
-    border:1px solid var(--white);
-    }
-    
-    .searchInput {
-    border:none;
-    background: none;
-    outline:none !important;
-    float:left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    width: 0px;
-    }
     li {
         font-size: 18px;
     }
+    a {
+        text-decoration: none;
+        position: relative;
+        color: #37789d;
+      }
+      a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        border-bottom: 2px solid rgb(236, 94, 66);
+        transition: 0.4s;
+      }
+      a:hover:after {
+        width: 100%;
+      }
     
     @media screen and (max-width: 1020px) {
     .content h1{
