@@ -4,9 +4,45 @@
     }
 .page {
     background: rgb(247, 251, 251);
-    background: linear-gradient(135deg, rgb(247, 251, 251) 50%, rgb(60, 183, 111) 50%);
+    background: linear-gradient(135deg, rgb(247, 251, 251) 50%, rgb(187, 223, 8) 50%);
     height: 100vh; 
 }
+
+.margin {
+  margin-top: 2rem;
+}
+.chat-1 {
+  font-size: 14px;
+  font-family: 'Press Start 2P', cursive !important;
+  background-color: rgb(187, 223, 8);
+  width: 50rem;
+  text-align: start;
+  border-radius: 1rem;
+  padding: .5rem;
+  margin-left: 2rem;
+}
+.chat-1 > a {
+  font-family: 'Press Start 2P', cursive !important;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.chat-1 > span {
+  font-size: 18px;
+
+}
+
+.chat-2 {
+  font-size: 14px;
+  font-family: 'Press Start 2P', cursive !important;
+  background-color: rgb(172, 174, 237);
+  width: 50rem;
+  text-align: end;
+  border-radius: .5rem;
+  padding: .5rem;
+}
+
 li {
     font-size: 18px;
 }
@@ -21,7 +57,7 @@ a {
     bottom: 0;
     left: 0;
     width: 0%;
-    border-bottom: 2px solid rgb(60, 183, 111);
+    border-bottom: 2px solid rgb(187, 223, 8);
     transition: 0.4s;
   }
   a:hover:after {
@@ -36,28 +72,44 @@ a {
     
     .content .social_icons a{
     margin:10px 0px;
-    color: rgb(247, 251, 251);
+    color: #000;
     display:block;
     text-decoration:none;
     font-size: 28px;
     transition:0.5s;
     }
     .tools {
-      margin-top: 100px;
+      margin-top: -250px;
       height: 500px;
       width: 600px;
-      border: dashed rgb(60, 183, 111) 5px;
+      border: dashed #000000 5px;
       border-radius: 80px 30px;
+      background-color: rgb(172, 174, 237) !important;
+      opacity: .8;
     }
 
-    .tools > p {
+    .tools > h2 {
       margin-top: 10px;
       text-align: center;
-      font-size: 28px;
+      font-size: 30px;
+      font-family: 'Press Start 2P', cursive !important;
+      
     }
 
     .tools > img {
-      width: 50px;
+      padding: 4px;
+      width: 60px;
       margin-top: 50px;
-      margin-left: 50px;
+      margin-left: 45px;
+      border: dashed #000000 1px;
+      border-radius: 5px;
     }
+
+
+footer {
+  position: fixed;
+  bottom: 2vh;
+  }
+
+ 
+

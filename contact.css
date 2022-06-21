@@ -59,22 +59,33 @@ a {
     
     .content .social_icons a{
     margin:10px 0px;
-    color: rgb(247, 251, 251);
+    color: #000;
     display:block;
     text-decoration:none;
     font-size: 28px;
     transition:0.5s;
     }
 
-    .form {
-        margin-top: 500px;
-
+    form {
+        display: grid;
+        opacity: .8;
+    }
+    form > button {
+        width: 200px;
+        border-radius: 30px;
+        background-color: #000;
+        color: #ffffff;
+        letter-spacing: 2px;
     }
 
-    input {
-        border: none;
-        border-radius: 10px;
-    }
+footer {
+
+position: fixed;
+bottom: 2vh;
+}
+
+
+    
 
     
     

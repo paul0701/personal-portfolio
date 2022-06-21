@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VAT calculator</title>
+  <link rel="stylesheet" href="vat.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Chakra+Petch:wght@300&family=Inconsolata:wght@200&family=Mina&family=Pangolin&family=Press+Start+2P&family=Space+Mono:wght@700&family=Special+Elite&family=Ubuntu&display=swap');
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body class="body">
+     <!--NAVBAR CODE BEGINS-->
+     <nav class="navbar navbar-expand-lg" id="nav">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-dark fw-bold" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="about.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fw-bold" href="learn.html">Learn2code</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark fw-bold" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="converter.html">Metric/Imperial unit converter.</a></li>
+                  <li><a class="dropdown-item" href="band.html">Band tribute page.</a></li>
+                </ul>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--NAVBAR CODE ENDS-->
+    <h1 class="fw-bold">VAT Calculator</h1>
+  <container class="">
+    <div class="calc-1 fw-bold text-light offset-md-2">
+      <div class="screen text-dark text-center">
+        <p id="conversion-value-five" class="conversion-value-five">£0</p>
+      </div><br>
+
+      <div class="key text-center offset-md-1">7
+      </div>
+      <div class="key text-center">8
+      </div>
+      <div class="key text-center">9
+      </div>
+      <div class="key text-center">%
+      </div><br>
+      <div class="key text-center offset-md-1">4
+      </div>
+      <div class="key text-center">5</div>
+      <div class="key text-center">6
+      </div>
+      <div class="key text-center">x
+      </div><br>
+      <div class="key text-center offset-md-1">1
+      </div>
+      <div class="key text-center">2
+      </div>
+      <div class="key text-center">3
+      </div>
+      <div class="key text-center">&#247;
+
+      </div><br>
+      <div class="key text-center offset-md-1">clr
+      </div>
+      <div class="key text-center">0
+      </div>
+      <div class="key text-center">-
+      </div>
+      <div class="key text-center">+
+      </div><br>
+
+      <div class="input d-flex justify-content-center">
+        <input style="color:white;" id="intial-value" class="intial-value text-center" type="number" placeholder="CASIO 5" oninput="converterFive(this.value)"></input>
+      </div>
+<!--SECOND CALCULATOR-->
+      <div class="calc-2 fw-bold text-light">
+        <div class="screen text-dark text-center">
+          <p id="conversion-value-seventeen" class="conversion-value-seventeen">£0</p>
+        </div><br>
+  
+        <div class="key text-center offset-md-1">7
+        </div>
+        <div class="key text-center">8
+        </div>
+        <div class="key text-center">9
+        </div>
+        <div class="key text-center">%
+        </div><br>
+        <div class="key text-center offset-md-1">4
+        </div>
+        <div class="key text-center">5</div>
+        <div class="key text-center">6
+        </div>
+        <div class="key text-center">x
+        </div><br>
+        <div class="key text-center offset-md-1">1
+        </div>
+        <div class="key text-center">2
+        </div>
+        <div class="key text-center">3
+        </div>
+        <div class="key text-center">&#247;
+  
+        </div><br>
+        <div class="key text-center offset-md-1">clr
+        </div>
+        <div class="key text-center">0
+        </div>
+        <div class="key text-center">-
+        </div>
+        <div class="key text-center">+
+        </div><br>
+  
+        <div class="input d-flex justify-content-center">
+          <input style="color:white;" id="intial-value" class="intial-value text-center" type="number" placeholder="CASIO 17.5" oninput="converterSeventeen(this.value)"></input>
+        </div>
+<!--THIRD CALCULATOR-->
+<div class="calc-2 fw-bold text-light">
+    <div class="screen text-dark text-center">
+      <p id="conversion-value-twenty" class="conversion-value-twenty">£0</p>
+    </div><br>
+
+    <div class="key text-center offset-md-1">7
+    </div>
+    <div class="key text-center">8
+    </div>
+    <div class="key text-center">9
+    </div>
+    <div class="key text-center">%
+    </div><br>
+    <div class="key text-center offset-md-1">4
+    </div>
+    <div class="key text-center">5</div>
+    <div class="key text-center">6
+    </div>
+    <div class="key text-center">x
+    </div><br>
+    <div class="key text-center offset-md-1">1
+    </div>
+    <div class="key text-center">2
+    </div>
+    <div class="key text-center">3
+    </div>
+    <div class="key text-center">&#247;
+
+    </div><br>
+    <div class="key text-center offset-md-1">clr
+    </div>
+    <div class="key text-center">0
+    </div>
+    <div class="key text-center">-
+    </div>
+    <div class="key text-center">+
+    </div><br>
+
+    <div class="input d-flex justify-content-center">
+      <input style="color:white;" id="intial-value" class="intial-value text-center" type="number" placeholder="CASIO 20" oninput="converterTwenty(this.value)"></input>
+    </div>
+</container>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+</body>
+    
+</html>
